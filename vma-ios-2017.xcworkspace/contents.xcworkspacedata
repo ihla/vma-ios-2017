@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LoginNavigationDemo/LoginNavigationDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIProgrammaticaly/UIProgrammaticaly.xcodeproj">
    </FileRef>
    <FileRef
