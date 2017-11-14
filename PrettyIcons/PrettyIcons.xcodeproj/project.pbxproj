@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		204DB72F1FB869C300B6657A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DB72E1FB869C300B6657A /* AppDelegate.swift */; };
+		204DB7341FB869C300B6657A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204DB7321FB869C300B6657A /* Main.storyboard */; };
+		204DB7361FB869C300B6657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204DB7351FB869C300B6657A /* Assets.xcassets */; };
+		204DB7391FB869C300B6657A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204DB7371FB869C300B6657A /* LaunchScreen.storyboard */; };
+		204DB7421FB86A0F00B6657A /* IconSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DB7411FB86A0F00B6657A /* IconSet.swift */; };
+		204DB7441FB86A5500B6657A /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DB7431FB86A5500B6657A /* Icon.swift */; };
+		204DB7471FB86B6700B6657A /* PrettyIconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DB7461FB86B6700B6657A /* PrettyIconTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		204DB72B1FB869C300B6657A /* PrettyIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		204DB72E1FB869C300B6657A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		204DB7331FB869C300B6657A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		204DB7351FB869C300B6657A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		204DB7381FB869C300B6657A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		204DB73A1FB869C300B6657A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204DB7411FB86A0F00B6657A /* IconSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSet.swift; sourceTree = "<group>"; };
+		204DB7431FB86A5500B6657A /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		204DB7461FB86B6700B6657A /* PrettyIconTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyIconTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		204DB7281FB869C300B6657A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204DB7221FB869C300B6657A = {
+			isa = PBXGroup;
+			children = (
+				204DB72D1FB869C300B6657A /* PrettyIcons */,
+				204DB72C1FB869C300B6657A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		204DB72C1FB869C300B6657A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				204DB72B1FB869C300B6657A /* PrettyIcons.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		204DB72D1FB869C300B6657A /* PrettyIcons */ = {
+			isa = PBXGroup;
+			children = (
+				204DB7451FB86B4D00B6657A /* Controller */,
+				204DB7401FB869FE00B6657A /* Model */,
+				204DB72E1FB869C300B6657A /* AppDelegate.swift */,
+				204DB7321FB869C300B6657A /* Main.storyboard */,
+				204DB7351FB869C300B6657A /* Assets.xcassets */,
+				204DB7371FB869C300B6657A /* LaunchScreen.storyboard */,
+				204DB73A1FB869C300B6657A /* Info.plist */,
+			);
+			path = PrettyIcons;
+			sourceTree = "<group>";
+		};
+		204DB7401FB869FE00B6657A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				204DB7431FB86A5500B6657A /* Icon.swift */,
+				204DB7411FB86A0F00B6657A /* IconSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		204DB7451FB86B4D00B6657A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				204DB7461FB86B6700B6657A /* PrettyIconTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		204DB72A1FB869C300B6657A /* PrettyIcons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204DB73D1FB869C300B6657A /* Build configuration list for PBXNativeTarget "PrettyIcons" */;
+			buildPhases = (
+				204DB7271FB869C300B6657A /* Sources */,
+				204DB7281FB869C300B6657A /* Frameworks */,
+				204DB7291FB869C300B6657A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrettyIcons;
+			productName = PrettyIcons;
+			productReference = 204DB72B1FB869C300B6657A /* PrettyIcons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		204DB7231FB869C300B6657A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Touch4It;
+				TargetAttributes = {
+					204DB72A1FB869C300B6657A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 204DB7261FB869C300B6657A /* Build configuration list for PBXProject "PrettyIcons" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 204DB7221FB869C300B6657A;
+			productRefGroup = 204DB72C1FB869C300B6657A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				204DB72A1FB869C300B6657A /* PrettyIcons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		204DB7291FB869C300B6657A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204DB7391FB869C300B6657A /* LaunchScreen.storyboard in Resources */,
+				204DB7361FB869C300B6657A /* Assets.xcassets in Resources */,
+				204DB7341FB869C300B6657A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		204DB7271FB869C300B6657A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204DB7441FB86A5500B6657A /* Icon.swift in Sources */,
+				204DB72F1FB869C300B6657A /* AppDelegate.swift in Sources */,
+				204DB7471FB86B6700B6657A /* PrettyIconTableViewController.swift in Sources */,
+				204DB7421FB86A0F00B6657A /* IconSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		204DB7321FB869C300B6657A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204DB7331FB869C300B6657A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		204DB7371FB869C300B6657A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204DB7381FB869C300B6657A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		204DB73B1FB869C300B6657A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		204DB73C1FB869C300B6657A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		204DB73E1FB869C300B6657A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrettyIcons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touch4it.PrettyIcons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		204DB73F1FB869C300B6657A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrettyIcons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touch4it.PrettyIcons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		204DB7261FB869C300B6657A /* Build configuration list for PBXProject "PrettyIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204DB73B1FB869C300B6657A /* Debug */,
+				204DB73C1FB869C300B6657A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204DB73D1FB869C300B6657A /* Build configuration list for PBXNativeTarget "PrettyIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204DB73E1FB869C300B6657A /* Debug */,
+				204DB73F1FB869C300B6657A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 204DB7231FB869C300B6657A /* Project object */;
+}

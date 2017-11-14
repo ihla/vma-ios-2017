@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ScaryBugs/ScaryBugs.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PrettyIcons/PrettyIcons.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LoginNavigationDemo/LoginNavigationDemo.xcodeproj">
    </FileRef>
    <FileRef
