@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ApplicationLifecycle/ApplicationLifecycle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ViewControllerLifecycle/ViewControllerLifecycle.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ScaryBugs/ScaryBugs.xcodeproj">
    </FileRef>
    <FileRef
