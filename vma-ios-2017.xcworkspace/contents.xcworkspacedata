@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SavingData.playground">
+   </FileRef>
+   <FileRef
       location = "group:ApplicationLifecycle/ApplicationLifecycle.xcodeproj">
    </FileRef>
    <FileRef
