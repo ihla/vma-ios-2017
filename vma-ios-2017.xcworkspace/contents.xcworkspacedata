@@ -25,4 +25,7 @@
    <FileRef
       location = "group:Calculator/Calculator.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:StrongCycleDemo-fixed/StrongCycleDemo.xcodeproj">
+   </FileRef>
 </Workspace>

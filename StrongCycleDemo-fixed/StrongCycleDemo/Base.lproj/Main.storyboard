@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3bp-Jr-QKx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cycle 5(?)-->
+        <scene sceneID="25P-Ay-Fvb">
+            <objects>
+                <viewController id="pU8-rS-7Pi" customClass="Cycle5ViewController" customModule="StrongCycleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qLB-r7-9hM"/>
+                        <viewControllerLayoutGuide type="bottom" id="xiF-ba-fM2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CgQ-iO-eYw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ako správne implementovať delegate property?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqF-1t-Fny">
+                                <rect key="frame" x="60" y="290" width="480" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XqF-1t-Fny" firstAttribute="centerX" secondItem="CgQ-iO-eYw" secondAttribute="centerX" id="JBa-Kl-san"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XqF-1t-Fny" secondAttribute="trailing" constant="40" id="Yar-2W-4zo"/>
+                            <constraint firstItem="XqF-1t-Fny" firstAttribute="leading" secondItem="CgQ-iO-eYw" secondAttribute="leadingMargin" constant="40" id="ay3-se-3nZ"/>
+                            <constraint firstItem="XqF-1t-Fny" firstAttribute="centerY" secondItem="CgQ-iO-eYw" secondAttribute="centerY" id="q8v-le-DGG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle 5(?)" id="jGq-6P-2K8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hp-Dz-yqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="-631"/>
+        </scene>
+        <!--Strong Reference Cycles-->
+        <scene sceneID="igb-M4-zUP">
+            <objects>
+                <viewController id="gga-CS-pK2" customClass="ViewController" customModule="StrongCycleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3gR-4e-9rr"/>
+                        <viewControllerLayoutGuide type="bottom" id="m0b-Ql-E6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xnI-oq-IAp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf5-LW-gbH">
+                                <rect key="frame" x="276" y="117" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cycle 1"/>
+                                <connections>
+                                    <segue destination="0qa-3h-q3z" kind="show" id="i8y-ko-m9N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihx-aP-SJl">
+                                <rect key="frame" x="275" y="171" width="51" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cycle 2"/>
+                                <connections>
+                                    <segue destination="Dty-Qg-8S6" kind="show" id="ylf-ra-GZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyl-F0-kSA">
+                                <rect key="frame" x="274" y="225" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cycle 3"/>
+                                <connections>
+                                    <segue destination="hyy-3b-Mmn" kind="show" id="pOK-ly-b6k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62h-KB-wUB">
+                                <rect key="frame" x="274" y="279" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cycle 4"/>
+                                <connections>
+                                    <segue destination="fQO-EJ-WkL" kind="show" id="wIU-a8-1AS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nF-3i-pJ4">
+                                <rect key="frame" x="274" y="337" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cycle 5"/>
+                                <connections>
+                                    <segue destination="pU8-rS-7Pi" kind="show" identifier="Cycle5" id="jtS-YS-THs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3nF-3i-pJ4" firstAttribute="centerX" secondItem="xnI-oq-IAp" secondAttribute="centerX" id="4Mu-9C-gdq"/>
+                            <constraint firstItem="62h-KB-wUB" firstAttribute="centerX" secondItem="xnI-oq-IAp" secondAttribute="centerX" id="74j-Ky-2vj"/>
+                            <constraint firstItem="Tyl-F0-kSA" firstAttribute="centerX" secondItem="xnI-oq-IAp" secondAttribute="centerX" id="B6f-Fc-1DQ"/>
+                            <constraint firstItem="Vf5-LW-gbH" firstAttribute="centerX" secondItem="xnI-oq-IAp" secondAttribute="centerX" id="HN4-9p-6N5"/>
+                            <constraint firstItem="3nF-3i-pJ4" firstAttribute="top" secondItem="62h-KB-wUB" secondAttribute="bottom" constant="28" id="Lcz-HR-w4G"/>
+                            <constraint firstItem="Tyl-F0-kSA" firstAttribute="top" secondItem="ihx-aP-SJl" secondAttribute="bottom" constant="24" id="aOJ-Zr-bhy"/>
+                            <constraint firstItem="Vf5-LW-gbH" firstAttribute="top" secondItem="3gR-4e-9rr" secondAttribute="bottom" constant="53" id="g0c-Xd-wzf"/>
+                            <constraint firstItem="ihx-aP-SJl" firstAttribute="top" secondItem="Vf5-LW-gbH" secondAttribute="bottom" constant="24" id="mhO-h2-m4A"/>
+                            <constraint firstItem="ihx-aP-SJl" firstAttribute="centerX" secondItem="xnI-oq-IAp" secondAttribute="centerX" id="r5o-9q-bxs"/>
+                            <constraint firstItem="62h-KB-wUB" firstAttribute="top" secondItem="Tyl-F0-kSA" secondAttribute="bottom" constant="24" id="wML-co-QzB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Strong Reference Cycles" id="tgY-Mg-T4l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7I-27-FrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="60"/>
+        </scene>
+        <!--Cycle 1-->
+        <scene sceneID="KkY-mm-FO3">
+            <objects>
+                <viewController id="0qa-3h-q3z" customClass="Cycle1ViewController" customModule="StrongCycleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NAG-ep-Sb7"/>
+                        <viewControllerLayoutGuide type="bottom" id="CjM-eW-FqX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RMC-fC-pYs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.82835139840000005" green="1" blue="0.61262800480000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle 1" id="grU-vX-tPl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DY7-bq-rt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2363" y="60"/>
+        </scene>
+        <!--Cycle 4-->
+        <scene sceneID="het-Ri-JRc">
+            <objects>
+                <viewController id="fQO-EJ-WkL" customClass="Cycle4ViewController" customModule="StrongCycleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sa9-0P-Tvu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bpm-lG-q6F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fLp-Q4-l8M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle 4" id="L3o-Bt-BIf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dcd-ed-1OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="837"/>
+        </scene>
+        <!--Cycle 3-->
+        <scene sceneID="6Lg-2k-JsO">
+            <objects>
+                <viewController id="hyy-3b-Mmn" customClass="Cycle3ViewController" customModule="StrongCycleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3e-Kf-TeV"/>
+                        <viewControllerLayoutGuide type="bottom" id="1I0-hi-ZQy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L0Q-Ho-a7V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle 3" id="lWI-Yg-ZxA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H74-t9-1f8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="837"/>
+        </scene>
+        <!--Cycle 2-->
+        <scene sceneID="SK3-Wj-PLW">
+            <objects>
+                <viewController id="Dty-Qg-8S6" customClass="Cycle2ViewController" customModule="StrongCycleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P89-lV-ogY"/>
+                        <viewControllerLayoutGuide type="bottom" id="zwS-RV-oLO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rd9-qm-4Ku">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle 2" id="0Pr-2L-mGY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Bw-TY-oMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2363" y="837"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QJQ-6G-e2B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3bp-Jr-QKx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WVq-Zd-19Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gga-CS-pK2" kind="relationship" relationship="rootViewController" id="Q4G-JN-Sx6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8G-2f-KJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944" y="60"/>
+        </scene>
+    </scenes>
+</document>
